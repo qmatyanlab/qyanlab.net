@@ -1,0 +1,39 @@
+name: Monthly publication check
+
+on:
+  schedule:
+    - cron: "0 13 1 * *"   # 1st of each month, 13:00 UTC (9 am New York in summer, 8 am in winter)
+  workflow_dispatch: {}     # "Run workflow" button on the Actions tab
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Find new publications (ORCID, OpenAlex, arXiv; verified via Crossref/arXiv)
+        id: upd
+        run: python3 tools/update_pubs.py
+      - name: Rebuild site
+        if: steps.upd.outputs.changed == 'true'
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q pandoc
+          python3 tools/build.py
+      - name: Open pull request for review
+        if: steps.upd.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: pubs-${{ steps.upd.outputs.month }}
+          title: "Publications update ${{ steps.upd.outputs.month }}"
+          body-path: build/pr_body.md
+          commit-message: "Publications update ${{ steps.upd.outputs.month }} (automated check)"
+          add-paths: |
+            data
+            docs
+          delete-branch: true
