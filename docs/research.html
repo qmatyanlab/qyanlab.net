@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research | Yan Group at Northeastern</title>
+<meta name="description" content="Research directions of the Yan Group">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html"><span class="brand-name">Yan Group</span><span class="brand-sub">Northeastern University</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">☰</button>
+    <nav id="site-nav" class="site-nav"><a href="index.html">Home</a><a href="research.html" aria-current="page">Research</a><a href="people.html">People</a><a href="publications.html">Publications</a><a href="code.html">Code</a><a href="resources.html">Resources</a><a href="news.html">News</a><a href="teaching.html">Teaching</a><a href="join.html">Join</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>Research</h1><div class="prose research">
+<h2 id="symmetry-aware-ai-for-solid-state-quantum-materials">1. Symmetry-aware AI for solid-state quantum materials</h2>
+<p>We develop machine learning frameworks that build physical principles (point-group symmetry, equivariance, local bonding motifs, and exact physical constraints) into the network itself rather than learning them from data, for accurate, data-efficient and interpretable prediction for quantum materials. - Equivariant networks for tensorial and spectral properties: TSENN predicts full frequency-dependent dielectric tensors about 1,000× faster than DFT (Nat. Commun. 2026); equivariant GNNs for tensor properties of crystals (arXiv:2406.03563). - Point-group equivariant graph neural networks for materials (arXiv:2607.16871). - Beyond-atom representations: motif-centric learning (AMDNet, Sci. Adv. 2021), crystal hypergraph convolutional networks (npj Comput. Mater. 2025), and material–motif heterogeneous graphs (Adv. Intell. Discov. 2026).</p>
+<h2 id="ai-driven-inverse-design-of-functional-and-quantum-materials">2. AI-driven inverse design of functional and quantum materials</h2>
+<p>Moving from property prediction to design: symmetry-respecting, property-steered generative models coupled with first-principles validation in a closed loop. - Symmetry- and property-aware crystal generation with reinforcement learning (SPARC, arXiv:2609.13468), which avoids the low-symmetry “reward-hacking” structures of surrogate-guided generators. - Targets include altermagnets, low-damping magnets, nonlinear-optical and Berry-curvature-dipole materials. - Toward foundation models and agentic workflows that combine equivariant models, generative design, high-throughput first-principles computation, and AI agents.</p>
+<h2 id="machine-learning-for-electronic-structure-across-scales">3. Machine learning for electronic structure across scales</h2>
+<p>End-to-end and Hamiltonian-based learning of electronic structure, from simple crystals to large twisted and disordered systems. - WANDER bridges deep-learning force fields and Wannier Hamiltonians, reaching twisted bilayers with more than 1,000 atoms at 10³–10⁴× the speed of DFT (npj Comput. Mater. 2025). - Bandformer, a graph Transformer for end-to-end band-structure prediction (arXiv:2411.16483). - Open data: tensorial optical and transport properties of 7,301 materials from automated Wannierization (Sci. Data 2025); physics-constrained density functionals via contrastive learning (Digital Discovery 2023).</p>
+<h2 id="multilayer-twisted-quantum-materials">4. Multilayer twisted quantum materials</h2>
+<p>Twisting stacks of three or more two-dimensional layers opens a vast design space of moiré superlattices whose flat bands, topology, chirality, and nonlinear optical responses are absent in the individual layers. We aim to make this space computable and designable. - A universal machine-learning Hamiltonian for twisted multilayers: equivariant models evaluate each layer in its own frame, and a twist-equivariant network learns the interlayer coupling. Trained on large-scale first-principles data spanning thousands of 2D materials, it targets the electronic structure and optical response of moiré cells far beyond the reach of DFT. - Symmetry analysis of arbitrary twisted stacks (point and space groups, chirality, polarity) to identify allowed second-harmonic generation and circular-dichroism responses, guiding the design of chiral and nonlinear-optical moiré materials. Explore twisted stacks in our <a href="https://qiminyan-twisted-builder.hf.space">Twisted Multilayer Builder</a> (see <a href="resources.html">Resources</a>). - Deep-learning-guided twistronics for self-assembled quantum optoelectronics (NSF DMREF), and ideal topological flat bands in moiré heterostructures with type-II band alignment (arXiv:2507.06168).</p>
+<h2 id="data-driven-design-of-quantum-defects-in-2d-materials">5. Data-driven design of quantum defects in 2D materials</h2>
+<p>Symmetry-guided, high-throughput discovery of point defects for qubits, single-photon emitters, and quantum sensors in atomically thin materials. - A local-symmetry design principle identified antisite defect qubits in transition metal dichalcogenides (Nat. Commun. 2022; patent) and more than 40 quantum-defect candidates across binary 2D hosts (arXiv:2405.11379). - Machine learning for defects with persistent-homology features (Chem. Mater. 2025). - The Defect Genome Initiative (Adv. Mater. 2024) and the Roadmap on 2D Materials for Quantum Technologies (2D Mater., guest editor).</p>
+<h2 id="disorder-alloys-and-complex-materials">6. Disorder, alloys, and complex materials</h2>
+<p>Machine learning frameworks for configurational, chemical, and spin disorder in multicomponent alloys. - GNN-accelerated Monte Carlo for order–disorder transitions and configurational entropy (npj Comput. Mater. 2024), and ensemble properties of atomically disordered materials (ACS Nano 2025). - A multi-scale framework for coupled chemical, spin, and structural disorder in alloys (arXiv:2607.07456).</p>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div><strong>Yan Group</strong> · Department of Physics, Northeastern University<br>Boston, MA 02115, USA</div>
+    <div class="footer-links"><a href="mailto:q.yan@northeastern.edu">q.yan@northeastern.edu</a>
+      <a href="https://github.com/qmatyanlab">GitHub</a>
+      <a href="https://scholar.google.com/citations?user=ysfTfdkAAAAJ">Google Scholar</a>
+      <a href="https://orcid.org/0000-0002-3377-0314">ORCID</a></div>
+  </div>
+</footer>
+<script>
+document.querySelector('.nav-toggle').addEventListener('click', e => {
+  const open = document.body.classList.toggle('nav-open'); e.currentTarget.setAttribute('aria-expanded', open);
+});
+</script>
+</body>
+</html>

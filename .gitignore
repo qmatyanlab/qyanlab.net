@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+assets/img/wix/
+assets/img/people/incoming/
+tools/people.html
+tools/img_list.tsv
+tools/img_urls.txt
+tools/wix_images.json

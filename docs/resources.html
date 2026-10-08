@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resources | Yan Group at Northeastern</title>
+<meta name="description" content="AI and data-driven design of quantum and energy materials">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html"><span class="brand-name">Yan Group</span><span class="brand-sub">Northeastern University</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">☰</button>
+    <nav id="site-nav" class="site-nav"><a href="index.html">Home</a><a href="research.html">Research</a><a href="people.html">People</a><a href="publications.html">Publications</a><a href="code.html">Code</a><a href="resources.html" aria-current="page">Resources</a><a href="news.html">News</a><a href="teaching.html">Teaching</a><a href="join.html">Join</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<div class="prose"><h1 id="resources">Resources</h1>
+<h2 id="web-applications">Web applications</h2>
+<h3 id="twisted-multilayer-builder">Twisted Multilayer Builder</h3>
+<p><a href="https://qiminyan-twisted-builder.hf.space" class="btn"><strong>Open the Twisted Multilayer Builder →</strong></a></p>
+<p>An interactive web application for constructing and analyzing twisted multilayer (three or more layers) two-dimensional structures. Stacks can use one material throughout (alternating-twist trilayers, helical multilayers, twisted double bilayers) or mix materials, with layers drawn from tens of thousands of DFT-relaxed monolayers in public 2D materials databases or imported from structure files.</p>
+<ul>
+<li>Commensurate supercells with minimal strain for any stacking and twist pattern, with the moiré period and per-layer strain</li>
+<li>Interactive 3D, top (moiré pattern), and side views, with figure export (PNG, SVG)</li>
+<li>Symmetry analysis of every stack (point and space group, chirality, polarity) and the symmetry-allowed second-harmonic generation (χ⁽²⁾) and circular-dichroism (gyration) tensor components</li>
+<li>Structure export: POSCAR, CIF, XSF, extended XYZ, and metadata</li>
+</ul>
+<p><em>Hosted on Hugging Face Spaces. If the app has been idle, the first visit can take up to a minute to start.</em></p>
+<p><strong>Where the 2D materials come from.</strong> The builder’s catalog of 29,855 monolayers is a snapshot of four public databases (monolayers with at most 60 atoms per cell that form a single slab). Every exported structure records its source, license, and citation.</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Database</th>
+<th>Monolayers</th>
+<th>License</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://jarvis.nist.gov/">JARVIS-DFT 2D</a> (NIST)</td>
+<td>1,102</td>
+<td>CC BY 4.0</td>
+<td>K. Choudhary et al., <em>npj Comput. Mater.</em> <strong>6</strong>, 173 (2020)</td>
+</tr>
+<tr>
+<td><a href="http://www.2dmatpedia.org/">2DMatPedia</a></td>
+<td>6,345</td>
+<td>open, citation requested</td>
+<td>J. Zhou et al., <em>Sci. Data</em> <strong>6</strong>, 86 (2019)</td>
+</tr>
+<tr>
+<td><a href="https://www.materialscloud.org/discover/mc2d">Materials Cloud MC2D</a> (EPFL)</td>
+<td>2,730</td>
+<td>CC BY 4.0</td>
+<td>D. Campi et al., Materials Cloud Archive 2022.84 (2022)</td>
+</tr>
+<tr>
+<td><a href="https://alexandria.icams.rub.de/">Alexandria 2D</a> (PBE; E<sub>hull</sub> ≤ 0.10 eV/atom)</td>
+<td>19,678</td>
+<td>CC BY 4.0</td>
+<td>J. Schmidt et al., <em>2D Mater.</em> <strong>10</strong>, 035009 (2023)</td>
+</tr>
+</tbody>
+</table>
+<p>Users can also import their own structures (POSCAR, CIF, XSF, XYZ, Quantum ESPRESSO, ASE JSON), including individual structures downloaded from C2DB or the Materials Project.</p>
+<h2 id="datasets">Datasets</h2>
+<ul>
+<li><strong>Tensorial optical and transport properties of materials from the Wannier function method.</strong> Frequency-dependent optical and transport tensors for 7,301 materials from automated Wannierization. Data: <a href="https://doi.org/10.6084/m9.figshare.28689059">doi:10.6084/m9.figshare.28689059</a> · Paper: <a href="https://doi.org/10.1038/s41597-025-05396-9">Scientific Data 12, 1092 (2025)</a></li>
+<li><strong>TSENN models and dataset.</strong> Frequency-dependent dielectric tensors and pretrained equivariant models. Data: <a href="https://doi.org/10.6084/m9.figshare.31180054">doi:10.6084/m9.figshare.31180054</a> · Paper: <a href="https://doi.org/10.1038/s41467-026-69159-9">Nature Communications (2026)</a> · Code: <a href="https://github.com/qmatyanlab/TSENN">TSENN</a></li>
+<li><strong>Band structure dataset for Bandformer.</strong> Electronic band structures of about 27,000 materials from the Materials Project, prepared for end-to-end band-structure learning. Data: <a href="https://doi.org/10.6084/m9.figshare.30502967">doi:10.6084/m9.figshare.30502967</a> · Paper: <a href="https://arxiv.org/abs/2411.16483">arXiv:2411.16483</a> · Code: <a href="https://github.com/qmatyanlab/Bandformer">Bandformer</a></li>
+</ul>
+<h2 id="software">Software</h2>
+<p>Open-source codes for our machine learning models and workflows are listed on the <a href="code.html">Code</a> page and on <a href="https://github.com/qmatyanlab">GitHub</a>.</p>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div><strong>Yan Group</strong> · Department of Physics, Northeastern University<br>Boston, MA 02115, USA</div>
+    <div class="footer-links"><a href="mailto:q.yan@northeastern.edu">q.yan@northeastern.edu</a>
+      <a href="https://github.com/qmatyanlab">GitHub</a>
+      <a href="https://scholar.google.com/citations?user=ysfTfdkAAAAJ">Google Scholar</a>
+      <a href="https://orcid.org/0000-0002-3377-0314">ORCID</a></div>
+  </div>
+</footer>
+<script>
+document.querySelector('.nav-toggle').addEventListener('click', e => {
+  const open = document.body.classList.toggle('nav-open'); e.currentTarget.setAttribute('aria-expanded', open);
+});
+</script>
+</body>
+</html>
