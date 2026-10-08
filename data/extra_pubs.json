@@ -1,5 +1,26 @@
 [
-  {"key": "hsu2026sparc", "year": "2026", "authors": "T.-W. Hsu, A. Bansil, Q. Yan", "title": "Symmetry- and Property-Aware Crystal Generation with Reinforcement Learning for Inverse Materials Design", "venue": "arXiv:2609.13468", "url": "https://arxiv.org/abs/2609.13468"},
-  {"key": "heilman2026pgenn", "year": "2026", "authors": "A. J. Heilman, Q. Yan", "title": "Point Group Equivariant Graph Neural Networks for Materials", "venue": "arXiv:2607.16871", "url": "https://arxiv.org/abs/2607.16871"},
-  {"key": "fang2026multiscale", "year": "2026", "authors": "Z. Fang, Q. Yan", "title": "A Multi-Scale Machine Learning Framework for Coupled Chemical, Spin, and Structural Disorder in Alloys", "venue": "arXiv:2607.07456", "url": "https://arxiv.org/abs/2607.07456"}
+  {
+    "key": "hsu2026sparc",
+    "year": "2026",
+    "authors": "T.-W. Hsu, A. Bansil, Q. Yan",
+    "title": "Symmetry- and Property-Aware Crystal Generation with Reinforcement Learning for Inverse Materials Design",
+    "venue": "arXiv:2609.13468",
+    "url": "https://arxiv.org/abs/2609.13468"
+  },
+  {
+    "key": "heilman2026pgenn",
+    "year": "2026",
+    "authors": "A. J. Heilman, Q. Yan",
+    "title": "Point Group Equivariant Graph Neural Networks for Materials",
+    "venue": "arXiv:2607.16871",
+    "url": "https://arxiv.org/abs/2607.16871"
+  },
+  {
+    "key": "fang2026multiscale",
+    "year": "2026",
+    "authors": "Z. Fang, Q. Yan",
+    "title": "A Multi-Scale Machine Learning Framework for Coupled Chemical, Spin, and Structural Disorder in Alloys",
+    "venue": "arXiv:2607.07456",
+    "url": "https://arxiv.org/abs/2607.07456"
+  }
 ]
