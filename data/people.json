@@ -1,31 +1,147 @@
 {
-  "pi": {"name": "Qimin Yan", "title": "Associate Professor of Physics", "photo": "qimin-yan.jpg",
-         "email": "q.yan@northeastern.edu", "orcid": "0000-0002-3377-0314",
-         "scholar": "https://scholar.google.com/citations?user=ysfTfdkAAAAJ", "github": "https://github.com/qmatyanlab"},
+  "pi": {
+    "name": "Qimin Yan",
+    "title": "Associate Professor of Physics",
+    "photo": "qimin-yan.jpg",
+    "email": "q.yan@northeastern.edu",
+    "orcid": "0000-0002-3377-0314",
+    "scholar": "https://scholar.google.com/citations?user=ysfTfdkAAAAJ",
+    "github": "https://github.com/qmatyanlab"
+  },
   "current": [
-    {"name": "Zhenyao Fang", "role": "Postdoctoral Researcher", "since": "2023", "photo": "zhenyao-fang.jpg"},
-    {"name": "Ting-Wei Hsu", "role": "PhD Student", "since": "2024", "photo": "ting-wei-hsu.jpg"},
-    {"name": "Anoj Aryal", "role": "PhD Student", "since": "2021", "photo": "anoj-aryal.jpg"},
-    {"name": "Alex Heilman", "role": "PhD Student", "since": "2021", "photo": "alex-heilman.jpg"},
-    {"name": "Yu Ruan", "role": "PhD Student", "since": "2025", "photo": ""}
+    {
+      "name": "Zhenyao Fang",
+      "role": "Postdoctoral Researcher",
+      "since": "2023",
+      "photo": "zhenyao-fang.jpg"
+    },
+    {
+      "name": "Ting-Wei Hsu",
+      "role": "PhD Student",
+      "since": "2024",
+      "photo": "ting-wei-hsu.jpg"
+    },
+    {
+      "name": "Anoj Aryal",
+      "role": "PhD Student",
+      "since": "2021",
+      "photo": "anoj-aryal.jpg"
+    },
+    {
+      "name": "Alex Heilman",
+      "role": "PhD Student",
+      "since": "2021",
+      "photo": "alex-heilman.jpg"
+    },
+    {
+      "name": "Yu Ruan",
+      "role": "PhD Student",
+      "since": "2025",
+      "photo": ""
+    }
   ],
   "alumni": [
-    {"name": "Weiyi Gong", "role": "PhD Student (2019–2025)", "now": "", "photo": "weiyi-gong.jpg"},
-    {"name": "Yubo Qi", "role": "Associate Research Scientist (2022–2023)", "now": "Assistant Professor, University of Alabama at Birmingham", "photo": "yubo-qi.jpg"},
-    {"name": "Jeng-Yuan Tsai", "role": "PhD Student (2018–2022) and Postdoctoral Researcher (2022–2023)", "now": "Data Processing Scientist, Jefferson Lab", "photo": "jeng-yuan-tsai.jpg"},
-    {"name": "Claire Schlesinger", "role": "Undergraduate Co-op Student (2023–2024)", "now": "", "photo": ""},
-    {"name": "Debajit Chakraborty", "role": "Research Assistant Professor (2021–2022)", "now": "", "photo": "debajit-chakraborty.jpg"},
-    {"name": "Huta R. Banjade", "role": "PhD Student (2016–2020)", "now": "Postdoctoral Fellow, Virginia Commonwealth University", "photo": "huta-banjade.jpg"},
-    {"name": "Jinbo Pan", "role": "Postdoctoral Fellow (2016–2019)", "now": "Associate Professor, Institute of Physics, Chinese Academy of Sciences", "photo": "jinbo-pan.jpg"},
-    {"name": "Liping Yu", "role": "Research Assistant Professor (2016–2018)", "now": "Associate Professor, University of Central Florida", "photo": "liping-yu.jpg"},
-    {"name": "Yan-Fang Zhang", "role": "Visiting Scholar (2016–2019)", "now": "Postdoctoral Fellow, Chinese Academy of Sciences", "photo": "yan-fang-zhang.jpg"},
-    {"name": "Lifu Zhang", "role": "Visiting PhD Student (2019–2020)", "now": "", "photo": "lifu-zhang.jpg"},
-    {"name": "Francesco Ricci", "role": "Visiting Scholar (2019)", "now": "", "photo": ""},
-    {"name": "Yijun Tong", "role": "Visiting Master's Student (2018–2020)", "now": "PhD Student, University of Washington", "photo": ""},
-    {"name": "Andy Philips", "role": "Undergraduate Student (2020–2022)", "now": "", "photo": "andy-philips.jpg"},
-    {"name": "Brendan Magdamo", "role": "Undergraduate Student (2020–2021)", "now": "", "photo": ""},
-    {"name": "Yu Wang", "role": "Undergraduate Student (2016–2020)", "now": "PhD Student, Princeton University", "photo": ""},
-    {"name": "Linh Nguyen", "role": "Undergraduate Student (2017)", "now": "", "photo": ""},
-    {"name": "Dylan Harrison", "role": "Undergraduate Student (2017)", "now": "", "photo": ""}
+    {
+      "name": "Weiyi Gong",
+      "role": "PhD Student (2019–2025)",
+      "now": "Postdoctoral Fellow, Argonne National Laboratory",
+      "photo": "weiyi-gong.jpg"
+    },
+    {
+      "name": "Yubo Qi",
+      "role": "Associate Research Scientist (2022–2023)",
+      "now": "Assistant Professor, University of Alabama at Birmingham",
+      "photo": "yubo-qi.jpg"
+    },
+    {
+      "name": "Jeng-Yuan Tsai",
+      "role": "PhD Student (2018–2022) and Postdoctoral Researcher (2022–2023)",
+      "now": "Data Processing Scientist, Jefferson Lab",
+      "photo": "jeng-yuan-tsai.jpg"
+    },
+    {
+      "name": "Claire Schlesinger",
+      "role": "Undergraduate Co-op Student (2023–2024)",
+      "now": "",
+      "photo": ""
+    },
+    {
+      "name": "Debajit Chakraborty",
+      "role": "Research Assistant Professor (2021–2022)",
+      "now": "",
+      "photo": "debajit-chakraborty.jpg"
+    },
+    {
+      "name": "Huta R. Banjade",
+      "role": "PhD Student (2016–2020)",
+      "now": "Postdoctoral Fellow, Virginia Commonwealth University",
+      "photo": "huta-banjade.jpg"
+    },
+    {
+      "name": "Jinbo Pan",
+      "role": "Postdoctoral Fellow (2016–2019)",
+      "now": "Associate Professor, Institute of Physics, Chinese Academy of Sciences",
+      "photo": "jinbo-pan.jpg"
+    },
+    {
+      "name": "Liping Yu",
+      "role": "Research Assistant Professor (2016–2018)",
+      "now": "Associate Professor, University of Central Florida",
+      "photo": "liping-yu.jpg"
+    },
+    {
+      "name": "Yan-Fang Zhang",
+      "role": "Visiting Scholar (2016–2019)",
+      "now": "Postdoctoral Fellow, Chinese Academy of Sciences",
+      "photo": "yan-fang-zhang.jpg"
+    },
+    {
+      "name": "Lifu Zhang",
+      "role": "Visiting PhD Student (2019–2020)",
+      "now": "",
+      "photo": "lifu-zhang.jpg"
+    },
+    {
+      "name": "Francesco Ricci",
+      "role": "Visiting Scholar (2019)",
+      "now": "",
+      "photo": ""
+    },
+    {
+      "name": "Yijun Tong",
+      "role": "Visiting Master's Student (2018–2020)",
+      "now": "PhD Student, University of Washington",
+      "photo": ""
+    },
+    {
+      "name": "Andy Philips",
+      "role": "Undergraduate Student (2020–2022)",
+      "now": "",
+      "photo": "andy-philips.jpg"
+    },
+    {
+      "name": "Brendan Magdamo",
+      "role": "Undergraduate Student (2020–2021)",
+      "now": "",
+      "photo": ""
+    },
+    {
+      "name": "Yu Wang",
+      "role": "Undergraduate Student (2016–2020)",
+      "now": "PhD Student, Princeton University",
+      "photo": ""
+    },
+    {
+      "name": "Linh Nguyen",
+      "role": "Undergraduate Student (2017)",
+      "now": "",
+      "photo": ""
+    },
+    {
+      "name": "Dylan Harrison",
+      "role": "Undergraduate Student (2017)",
+      "now": "",
+      "photo": ""
+    }
   ]
 }
