@@ -253,7 +253,7 @@ def main():
     (OUT / "news.html").write_text(page("news.html", "News", "<h1>News</h1>" + news_list(news)))
     for name, title in (("teaching", "Teaching"), ("join", "Join the group"), ("resources", "Resources")):
         (OUT / f"{name}.html").write_text(page(f"{name}.html", title, '<div class="prose">' + md(ROOT / f"content/{name}.md") + "</div>"))
-    (OUT / "CNAME").write_text("www.qyanlab.net\n")
+    (OUT / "CNAME").write_text("www.qyanlab.net")
     (OUT / ".nojekyll").write_text("")
     print(f"built {OUT} ({n} publications, {len(news)} news items)")
 

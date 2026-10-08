@@ -58,6 +58,27 @@ def existing():
     return bib, dois, arx, titles, extra
 
 
+def bib_works(bib):
+    """(normalized title, set of author family names) for every bib entry."""
+    out = []
+    for m in re.finditer(r"@\w+\{[^,]+,(.*?)\n\}", bib, re.S):
+        body = m.group(1)
+        t = re.search(r"\btitle\s*=\s*\{((?:[^{}]|\{[^{}]*\})*)\}", body)
+        a = re.search(r"\bauthor\s*=\s*\{((?:[^{}]|\{[^{}]*\})*)\}", body)
+        if t and a:
+            fams = {re.sub(r"[{}\\]", "", n.split(",")[0]).strip().lower() for n in a.group(1).split(" and ")}
+            out.append((norm(t.group(1)), fams))
+    return out
+
+
+def same_work(title, fams, works):
+    """Same author list (by family name) and a related title: e.g. a preprint whose journal title changed."""
+    for t, f in works:
+        if f and fams and len(fams & f) / len(fams | f) >= 0.8 and difflib.SequenceMatcher(None, norm(title), t).ratio() >= 0.5:
+            return True
+    return False
+
+
 def seen_title(t, titles):
     n = norm(t)
     return any(difflib.SequenceMatcher(None, n, x).ratio() > 0.92 for x in titles)
@@ -228,7 +249,8 @@ def main():
         jhtml = f"<i>{html.escape(journal)}</i>"
         text = (f"The work “{html.escape(title)}” is published in {jhtml}. Congratulations, {first}!" if first
                 else f"Our work “{html.escape(title)}” is published in {jhtml}." if (auth[-1].get("family") == "Yan")
-                else f"Our collaborative work “{html.escape(title)}” is published in {jhtml}.")
+                else f"Our collaborative work with {html.escape((auth[-1].get('given', '') + ' ' + auth[-1].get('family', '')).strip())}'s group "
+                     f"on “{html.escape(title)}” is published in {jhtml}.")
         added_news.append({"date": f"{date[0]}-{date[1]:02d}" if len(date) > 1 and date[1] else year, "text": text,
                            "link": f"https://doi.org/{doi}"})
 
@@ -244,6 +266,8 @@ def main():
             continue  # published version already listed or being added
         if seen_title(meta["title"], titles):
             continue
+        if same_work(meta["title"], {n.split()[-1].lower() for n in meta["authors"]}, bib_works(bib)):
+            continue  # already listed as a journal paper under a revised title
         short = []
         for n in meta["authors"]:
             parts = n.split()
