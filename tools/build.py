@@ -189,6 +189,8 @@ def main():
         shutil.rmtree(OUT)
     (OUT / "assets").mkdir(parents=True)
     shutil.copytree(ROOT / "assets/css", OUT / "assets/css")
+    if (ROOT / "assets/files").exists():
+        shutil.copytree(ROOT / "assets/files", OUT / "assets/files")
     (OUT / "assets/img").mkdir()
     for p in (ROOT / "assets/img").iterdir():
         if p.name in ("wix",):
@@ -220,7 +222,7 @@ def main():
 <section><h2>Research directions</h2>{research_cards(rhtml)}</section>
 <section class="two-col">
   <div><h2>News</h2>{news_list(news, 6)}<p><a href="news.html">All news →</a></p></div>
-  <div><h2>About the PI</h2>{md((ROOT / 'content/bio.md'))}</div>
+  <div><h2>About the PI</h2>{md((ROOT / 'content/bio.md'))}<p><a href="assets/files/CV_Qimin_Yan.pdf">Full CV (PDF) →</a> · <a href="people.html">Group members →</a></p></div>
 </section>"""
     (OUT / "index.html").write_text(page("index.html", "Home", home))
 
@@ -234,7 +236,7 @@ def main():
   <img src="assets/img/people/{pi['photo']}" alt="Qimin Yan">
   <div><h2>Qimin Yan</h2><p class="prole">{pi['title']}, Department of Physics, Northeastern University</p>
   {md(ROOT / 'content/bio.md')}
-  <p class="links"><a href="mailto:{pi['email']}">{pi['email']}</a> · <a href="{pi['scholar']}">Google Scholar</a> ·
+  <p class="links"><a href="assets/files/CV_Qimin_Yan.pdf">CV (PDF)</a> · <a href="mailto:{pi['email']}">{pi['email']}</a> · <a href="{pi['scholar']}">Google Scholar</a> ·
   <a href="https://orcid.org/{pi['orcid']}">ORCID</a> · <a href="{pi['github']}">GitHub</a></p></div>
 </section>
 <h2>Group members</h2><div class="people">{cur}</div>
