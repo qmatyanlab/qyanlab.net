@@ -23,6 +23,11 @@
     "link": "https://doi.org/10.1038/s43246-026-01225-7"
   },
   {
+    "date": "2026-05",
+    "text": "Our collaborative work with Shenqiang Ren's group on “Chiral Molecular Intercalation Enables Light-Controlled 2D Multiferroic Heterostructures” is published in <i>Nano Letters</i>.",
+    "link": "https://doi.org/10.1021/acs.nanolett.6c00485"
+  },
+  {
     "date": "2026-03",
     "text": "The work on accurate prediction of tensorial spectra using equivariant graph neural networks (TSENN) is published in <i>Nature Communications</i>. Congratulations, Ting-Wei!",
     "link": "https://doi.org/10.1038/s41467-026-69159-9"
@@ -62,10 +67,6 @@
     "link": "https://doi.org/10.1038/s41524-025-01668-5"
   },
   {
-    "date": "2025",
-    "text": "Weiyi Gong successfully defends the PhD thesis. Congratulations, Dr. Gong!"
-  },
-  {
     "date": "2025-02",
     "text": "The work on persistent homology features for defect formation energy prediction is published in <i>Chemistry of Materials</i>. Congratulations, Zhenyao!",
     "link": "https://doi.org/10.1021/acs.chemmater.4c03028"
@@ -74,6 +75,10 @@
     "date": "2025-02",
     "text": "Our collaborative work with Shenqiang Ren's group on chiral molecular magnet superstructures with light control is published in <i>Nano Letters</i>.",
     "link": "https://doi.org/10.1021/acs.nanolett.4c06107"
+  },
+  {
+    "date": "2025",
+    "text": "Weiyi Gong successfully defends the PhD thesis. Congratulations, Dr. Gong!"
   },
   {
     "date": "2024-07",
